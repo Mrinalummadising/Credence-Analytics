@@ -1,0 +1,32 @@
+GET  http://localhost:3000/pictures
+###
+
+GET http://localhost:3000/pictures/2/
+###
+
+POST http://localhost:3000/pictures/
+Content-Type: application/json
+
+{
+    "id": 4,
+    "name": "Sunset",
+    "img_url": "https://example.com/sunset.jpg",
+    "summary": "A beautiful sunset over the mountains."
+}
+
+###
+
+
+PUT http://localhost:3000/pictures/5/
+Content-Type: application/json
+
+{
+    "name": "Forest",
+    "img": "https://example.com/forest.jpg",
+    "summary": "A dense forest with tall trees.",
+}
+
+###
+
+DELETE http://localhost:3000/movies/1/
+###
